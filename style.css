@@ -1,52 +1,81 @@
-*{
+* {
   box-sizing: border-box;
 }
-
-body{
+body {
   margin: 0;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  background-color: pink;
 }
 
-header, footer{
+header,
+footer {
   height: 60px;
 }
 
-header, main, footer{
-  border: 1px solid black;
-
+header,
+main,
+footer {
+  border: 1px solid plum;
 }
 
-header{
-  background-color: blue;
-
+header {
+  background-color: plum;
+  text-align: center;
+  font-size: large;
+  font-style: oblique;
 }
 
-main{
+main {
   height: calc(100vh - 150px);
   display: flex;
   justify-content: space-around;
   gap: 10px;
   padding: 10px 0px;
-  background-color: white;
-
+  background-color: pink;
+  flex-wrap: wrap;
 }
-
-main div{
-  flex-grow: 1;
+main div {
+  width: 30%;
   height: 100%;
-  background-color: yellow;
-  border: 1px solid white;
+  background-color: powderblue;
+  border: 1px solid plum;
+  text-align: center;
+  font-size: large;
+  font-style: oblique;
+}
+p{
+  font-size: large;
+  font-style: oblique;
+  font-family: 'Times New Roman', Times, serif;
+}
+footer {
+  background-color: plum;
+  font-size: large;
+  text-align: center;
+  font-style: oblique;
+}
+img {
+  width: 90%;
+  height: 70%;
+  margin-bottom: 20px;
+}
+@media (max-width: 768px) {
+  main {
+    height: auto;
+  }
 
+  main div {
+    width: 45%;
+    height: 100vh;
+  }
 }
 
-.dobro{
-  flex-grow: 2;
-}
+@media (max-width: 576px) {
 
-footer{
-  background-color: green;
-
+  main div {
+    width: 98%;
+  }
 }
